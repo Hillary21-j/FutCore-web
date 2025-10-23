@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Classificações — FutCore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; display: flex; background-color: #f4f4f4; }
+    .sidebar { width: 220px; background-color: #111; height: 100vh; position: fixed; overflow-y: auto; }
+    .sidebar h2 { color: #00ffcc; text-align: center; padding: 20px 0; font-size: 24px; border-bottom: 1px solid #444; }
+    .sidebar a { display: block; color: white; padding: 12px 20px; text-decoration: none; border-bottom: 1px solid #333; }
+    .sidebar a:hover { background-color: #00ffcc; color: #111; }
+    .main { margin-left: 220px; flex-grow: 1; }
+    nav { background-color: #222; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #00ffcc; }
+    section { padding: 40px; max-width: 1000px; margin: auto; }
+    h1, h2 { text-align: center; color: #222; }
+    .league-section { margin-bottom: 60px; }
+    .league-section img { width: 100%; border-radius: 10px; margin-bottom: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+    th { background-color: #00ffcc; color: #111; }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+    tr:hover { background-color: #e0f7f7; }
+    .source { text-align: center; margin-top: 10px; font-size: 14px; color: #555; }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>FutCore</h2>
+    <a href="index.html">Início</a>
+    <a href="times.html">Times</a>
+    <a href="jogadores.html">Jogadores</a>
+    <a href="calendario.html">Calendário</a>
+    <a href="historia.html">História</a>
+    <a href="galeria.html">Galeria</a>
+  </div>
+
+  <div class="main">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="classificacoes.html">Classificações</a>
+      <a href="competicoes.html">Competições</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <section>
+      <h1>Classificações 2024/25</h1>
+
+      <!-- LaLiga -->
+      <div class="league-section">
+        <h2>🇪🇸 LaLiga</h2>
+        <img src="https://cdn.pixabay.com/photo/2016/11/18/15/07/football-1835320_1280.jpg" alt="LaLiga">
+        <table>
+          <tr><th>Pos</th><th>Time</th><th>Pts</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GP</th><th>GC</th></tr>
+          <tr><td>1</td><td>Barcelona</td><td>88</td><td>38</td><td>28</td><td>4</td><td>6</td><td>102</td><td>39</td></tr>
+          <tr><td>2</td><td>Real Madrid</td><td>84</td><td>38</td><td>26</td><td>6</td><td>6</td><td>78</td><td>38</td></tr>
+          <tr><td>3</td><td>Atlético Madrid</td><td>76</td><td>38</td><td>22</td><td>10</td><td>6</td><td>68</td><td>30</td></tr>
+        </table>
+        <p class="source">Fonte: <a href="https://www.livesport.com/br/futebol/espanha/laliga-2024-2025/classificacao/" target="_blank">Livesport.com</a></p>
+      </div>
+
+      <!-- Premier League -->
+      <div class="league-section">
+        <h2>🏴 Premier League</h2>
+        <img src="https://cdn.pixabay.com/photo/2017/08/07/01/53/soccer-2599747_1280.jpg" alt="Premier League">
+        <table>
+          <tr><th>Pos</th><th>Time</th><th>Pts</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GP</th><th>GC</th></tr>
+          <tr><td>1</td><td>Man City</td><td>90</td><td>38</td><td>29</td><td>3</td><td>6</td><td>95</td><td>32</td></tr>
+          <tr><td>2</td><td>Arsenal</td><td>85</td><td>38</td><td>27</td><td>4</td><td>7</td><td>88</td><td>35</td></tr>
+          <tr><td>3</td><td>Liverpool</td><td>80</td><td>38</td><td>25</td><td>5</td><td>8</td><td>84</td><td>40</td></tr>
+        </table>
+      </div>
+
+      <!-- Serie A -->
+      <div class="league-section">
+        <h2>🇮🇹 Serie A</h2>
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/football-1868971_1280.jpg" alt="Serie A">
+        <table>
+          <tr><th>Pos</th><th>Time</th><th>Pts</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GP</th><th>GC</th></tr>
+          <tr><td>1</td><td>Inter</td><td>86</td><td>38</td><td>27</td><td>5</td><td>6</td><td>78</td><td>29</td></tr>
+          <tr><td>2</td><td>Milan</td><td>82</td><td>38</td><td>25</td><td>7</td><td>6</td><td>74</td><td>33</td></tr>
+          <tr><td>3</td><td>Juventus</td><td>78</td><td>38</td><td>24</td><td>6</td><td>8</td><td>70</td><td>36</td></tr>
+        </table>
+      </div>
+
+      <!-- Bundesliga -->
+      <div class="league-section">
+        <h2>🇩🇪 Bundesliga</h2>
+        <img src="https://cdn.pixabay.com/photo/2018/05/08/21/28/soccer-3385044_1280.jpg" alt="Bundesliga">
+        <table>
+          <tr><th>Pos</th><th>Time</th><th>Pts</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GP</th><th>GC</th></tr>
+          <tr><td>1</td><td>Bayern</td><td>89</td><td>34</td><td>28</td><td>5</td><td>1</td><td>92</td><td>28</td></tr>
+          <tr><td>2</td><td>Dortmund</td><td>82</td

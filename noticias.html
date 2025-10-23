@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Notícias — FutCore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; display: flex; background-color: #f9f9f9; }
+    .sidebar { width: 220px; background-color: #111; height: 100vh; position: fixed; overflow-y: auto; }
+    .sidebar h2 { color: #00ffcc; text-align: center; padding: 20px 0; font-size: 24px; border-bottom: 1px solid #444; }
+    .sidebar a { display: block; color: white; padding: 12px 20px; text-decoration: none; border-bottom: 1px solid #333; }
+    .sidebar a:hover { background-color: #00ffcc; color: #111; }
+    .main { margin-left: 220px; flex-grow: 1; }
+    nav { background-color: #222; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #00ffcc; }
+    section { padding: 40px; max-width: 1000px; margin: auto; }
+    h1 { font-size: 32px; margin-bottom: 30px; color: #222; text-align: center; }
+    .news-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      margin-bottom: 40px;
+      overflow: hidden;
+    }
+    .news-card img { width: 100%; height: auto; }
+    .news-card .content { padding: 20px; }
+    .news-card h2 { font-size: 24px; margin-bottom: 10px; color: #111; }
+    .news-card p { font-size: 16px; color: #555; }
+    .news-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #00ccaa;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .news-card a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>FutCore</h2>
+    <a href="index.html">Início</a>
+    <a href="times.html">Times</a>
+    <a href="jogadores.html">Jogadores</a>
+    <a href="calendario.html">Calendário</a>
+    <a href="historia.html">História</a>
+    <a href="galeria.html">Galeria</a>
+  </div>
+  <div class="main">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="classificacoes.html">Classificações</a>
+      <a href="competicoes.html">Competições</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <section>
+      <h1>Últimas Notícias do Futebol</h1>
+
+      <div class="news-card">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/football-1868971_1280.jpg" alt="Messi em campo">
+        <div class="content">
+          <h2>Messi brilha na MLS</h2>
+          <p>Com dois gols e uma assistência, Lionel Messi garantiu a vitória por 3 a 2 do Inter Miami sobre o DC United. A equipe fortalece sua posição nos playoffs da MLS Cup.</p>
+          <a href="https://pt.besoccer.com/noticias" target="_blank">Leia na BeSoccer</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="https://cdn.pixabay.com/photo/2017/08/07/01/53/soccer-2599747_1280.jpg" alt="Dembélé PSG">
+        <div class="content">
+          <h2>Dembélé favorito à Bola de Ouro</h2>
+          <p>O craque do PSG disputa com Lamine Yamal o prêmio de melhor jogador do mundo. A disputa está acirrada entre Paris e Barcelona.</p>
+          <a href="https://pt.besoccer.com/noticias" target="_blank">Leia na BeSoccer</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="https://cdn.pixabay.com/photo/2016/11/18/15/07/football-1835320_1280.jpg" alt="Brasileirão">
+        <div class="content">
+          <h2>Palmeiras lidera chances de título no Brasileirão</h2>
+          <p>Segundo a UFMG, o Palmeiras tem 69% de chance de ser campeão. Flamengo aparece logo atrás, enquanto Sport e Juventude enfrentam risco de rebaixamento.</p>
+          <a href="https://www.terra.com.br/esportes/futebol/brasileiro-serie-a/brasileirao-palmeiras-tem-69-de-chance-de-titulo-e-corinthians-aparece-com-54-de-rebaixamento,e7b7373a83f7ce6a22240742ae4f5373k54lfngy.html" target="_blank">Leia no Terra</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="https://cdn.pixabay.com/photo/2018/05/08/21/28/soccer-3385044_1280.jpg" alt="Copa do Mundo 2026">
+        <div class="content">
+          <h2>Eliminatórias da Copa do Mundo 2026</h2>
+          <p>O Catar garantiu vaga inédita na Copa após vencer os Emirados Árabes. Cabo Verde também se classificou pela primeira vez. África do Sul e Nigéria seguem na disputa.</p>
+          <a href="https://bing.com/search?q=notícias+de+futebol+atualizadas" target="_blank">Leia mais</a>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</body>
+</html>

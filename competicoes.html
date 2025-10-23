@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Competições — FutCore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      background-color: #f4f4f4;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #111;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      color: #00ffcc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
+      border-bottom: 1px solid #444;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+    }
+
+    .sidebar a:hover {
+      background-color: #00ffcc;
+      color: #111;
+    }
+
+    .main {
+      margin-left: 220px;
+      flex-grow: 1;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    .comp-block {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      padding: 20px;
+      margin-bottom: 50px;
+    }
+
+    .comp-block img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #00ffcc;
+      color: #111;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #e0f7f7;
+    }
+
+    .highlight {
+      color: #ff5722;
+      font-weight: bold;
+    }
+
+    .source {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    a {
+      color: #00ccaa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu vertical -->
+  <div class="sidebar">
+    <h2>FutCore</h2>
+    <a href="index.html">Início</a>
+    <a href="times.html">Times</a>
+    <a href="jogadores.html">Jogadores</a>
+    <a href="calendario.html">Calendário</a>
+    <a href="historia.html">História</a>
+    <a href="galeria.html">Galeria</a>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="main">
+    <!-- Menu horizontal -->
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="classificacoes.html">Classificações</a>
+      <a href="competicoes.html">Competições</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <section>
+      <h1>Competições Internacionais</h1>
+      <p class="intro">Acompanhe as Competições e não perca nenhum jogo.</p>
+
+      <!-- Champions League -->
+      <div class="comp-block">
+        <img src="https://cdn.pixabay.com/photo/2018/05/08/21/28/soccer-3385044_1280.jpg" alt="Champions League">
+        <h2>🏆 Champions League 2025/26</h2>
+        <table>
+          <tr><th>Fase</th><th>Data</th><th>Mês</th><th>Link</th></tr>
+          <tr><td>Sorteio</td><td class="highlight">28</td><td class="highlight">Agosto</td><td><a href="https://pt.uefa.com/uefachampionsleague/">UEFA</a></td></tr>
+          <tr><td>Jornada 1</td><td class="highlight">16–18</td><td class="highlight">Setembro</td><td><a href="https://pt.uefa.com/uefachampionsleague/fixtures-results/">Jogos</a></td></tr>
+          <tr><td>Final</td><td class="highlight">31</td><td class="highlight">Maio</td><td><a href="https://pt.uefa.com/uefachampionsleague/final/">Final</a></td></tr>
+        </table>
+        <p class="source">Fonte: UEFA.com</p>
+      </div>
+
+      <!-- Copa do Mundo -->
+      <div class="comp-block">
+        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/06/estados-unidos-selecao-copa-do-mundo-2026-1-e1749216896264.jpg" alt="Copa do Mundo FIFA 2026">
+        <h2>🌍 Copa do Mundo FIFA 2026</h2>
+        <table>
+          <tr><th>Fase</th><th>Data</th><th>Mês</th><th>Link</th></tr>
+          <tr><td>Abertura</td><td class="highlight">11</td><td class="highlight">Junho</td><td><a href="https://www.fifa.com/fifaplus/pt">FIFA</a></td></tr>
+          <tr><td>Final</td><td class="highlight">19</td><td class="highlight">Julho</td><td><a href="https://www.fifa.com/fifaplus/pt">Final</a></td></tr>
+        </table>
+        <p class="source">Fonte: FIFA.com</p>
+      </div>
+
+      <!-- Eliminatórias -->
+      <div class="comp-block">
+        <img src="https://gazetanewsonline.com.br/wp-content/uploads/2023/10/221279cf-7747-4591-ba76-9d3874539aee-819x1024.jpeg" alt="Eliminatórias Copa do Mundo">
+        <h2>⚔️ Eliminatórias para a Copa do Mundo</h2>
+        <table>
+          <tr><th>Continente</th><th>Rodadas</th><th>Período</th><th>Link</th></tr>
+          <tr><td>Europa</td><td>10</td><td class="highlight">Março–Novembro 2025</td><td><a href="https://pt.uefa.com/european-qualifiers/">UEFA</a></td></tr>
+          <tr><td>América do Sul</td><td>18</td><td class="highlight">Até Março 2026</td><td><a href="https://www.conmebol.com/">CONMEBOL</a></td></tr>
+        </table>
+        <p class="source">Fontes: UEFA, CONMEBOL</p>
+      </div>
+
+    </section>
+  </div>
+
+</body>
+</html>

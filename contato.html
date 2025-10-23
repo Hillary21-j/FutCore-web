@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato — FutCore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      background-color: #f0f0f0;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #111;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      color: #00ffcc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
+      border-bottom: 1px solid #444;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+    }
+
+    .sidebar a:hover {
+      background-color: #00ffcc;
+      color: #111;
+    }
+
+    .main {
+      margin-left: 220px;
+      flex-grow: 1;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #222;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #00ffcc;
+      color: #111;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #00ccaa;
+    }
+
+    .info {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #555;
+      text-align: center;
+    }
+
+    .links-contato {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .links-contato a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background-color: #00ffcc;
+      color: #111;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .links-contato a:hover {
+      background-color: #00ccaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>FutCore</h2>
+    <a href="index.html">Início</a>
+    <a href="times.html">Times</a>
+    <a href="jogadores.html">Jogadores</a>
+    <a href="calendario.html">Calendário</a>
+    <a href="historia.html">História</a>
+    <a href="galeria.html">Galeria</a>
+  </div>
+
+  <div class="main">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="classificacoes.html">Classificações</a>
+      <a href="competicoes.html">Competições</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <section>
+      <h1>Entre em Contato</h1>
+      <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea rows="5" placeholder="Sua mensagem..." required></textarea>
+        <button type="submit">Enviar mensagem</button>
+      </form>
+
+      <div class="info">
+        <p>Email: jackmanuel849@gmail.com</p>
+        <p>Telefone: +258 85 259 8856</p>
+        <p>Localização: Tete, Moçambique</p>
+      </div>
+
+      <div class="links-contato">
+        <a href="https://wa.me/258834295274" target="_blank">Enviar mensagem no WhatsApp</a>
+        <a href="tel:+258852598856">Ligar para +258 85 259 8856</a>
+        <a href="https://www.instagram.com/_eu_hillary_pm" target="_blank">Visitar Instagram</a>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
