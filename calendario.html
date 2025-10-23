@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendário — FutCore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      background-color: #f4f4f4;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #111;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      color: #00ffcc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
+      border-bottom: 1px solid #444;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+    }
+
+    .sidebar a:hover {
+      background-color: #00ffcc;
+      color: #111;
+    }
+
+    .main {
+      margin-left: 220px;
+      flex-grow: 1;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 40px;
+      color: #333;
+    }
+
+    ul {
+      font-size: 18px;
+      line-height: 1.6;
+      padding-left: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .source {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    a {
+      color: #00ccaa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight {
+      color: #ff5722;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu vertical -->
+  <div class="sidebar">
+    <h2>FutCore</h2>
+    <a href="index.html">Início</a>
+    <a href="times.html">Times</a>
+    <a href="jogadores.html">Jogadores</a>
+    <a href="calendario.html">Calendário</a>
+    <a href="historia.html">História</a>
+    <a href="galeria.html">Galeria</a>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="main">
+    <!-- Menu horizontal -->
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="classificacoes.html">Classificações</a>
+      <a href="competicoes.html">Competições</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <section>
+      <h1>Calendário Internacional 2025/26</h1>
+      <p>Acompanhe as principais datas do futebol mundial: Champions League, Copa do Mundo, Eliminatórias e torneios continentais.</p>
+
+      <h2>🏆 Champions League 2025/26</h2>
+      <ul>
+        <li><span class="highlight">28 de agosto:</span> Sorteio da fase de grupos</li>
+        <li><span class="highlight">16–18 de setembro:</span> Jornada 1</li>
+        <li><span class="highlight">30 set – 1 out:</span> Jornada 2</li>
+        <li><span class="highlight">21–22 de outubro:</span> Jornada 3</li>
+        <li><span class="highlight">4–5 de novembro:</span> Jornada 4</li>
+        <li><span class="highlight">25–26 de novembro:</span> Jornada 5</li>
+        <li><span class="highlight">9–10 de dezembro:</span> Jornada 6</li>
+        <li><span class="highlight">31 de maio de 2026:</span> Final — Allianz Arena, Munique</li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2018/05/08/21/28/soccer-3385044_1280.jpg" alt="Champions League">
+      <p class="source">Fonte: <a href="https://pt.uefa.com/uefachampionsleague/" target="_blank">UEFA.com</a></p>
+
+      <h2>🌍 Copa do Mundo FIFA 2026</h2>
+      <ul>
+        <li><span class="highlight">11 de junho:</span> Abertura — Estádio Azteca, México</li>
+        <li><span class="highlight">11–30 de junho:</span> Fase de grupos</li>
+        <li><span class="highlight">4–7 de julho:</span> Oitavas de final</li>
+        <li><span class="highlight">14–15 de julho:</span> Semifinais</li>
+        <li><span class="highlight">19 de julho:</span> Final — Nova York/Nova Jersey</li>
+      </ul>
+      <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/06/estados-unidos-selecao-copa-do-mundo-2026-1-e1749216896264.jpg" alt="Copa do Mundo 2026">
+      <p class="source">Fonte: <a href="https://www.fifa.com/fifaplus/pt" target="_blank">FIFA.com</a></p>
+
+      <h2>⚔️ Eliminatórias para a Copa</h2>
+      <ul>
+        <li><strong>Europa:</strong> <span class="highlight">março a novembro de 2025</span> — 54 seleções disputam 16 vagas</li>
+        <li><strong>América do Sul:</strong> <span class="highlight">até março de 2026</span> — 10 seleções, 6 vagas diretas + 1 repescagem</li>
+        <li><strong>África:</strong> <span class="highlight">até outubro de 2025</span> — 9 grupos, 9 vagas diretas</li>
+      </ul>
+      <img src="https://gazetanewsonline.com.br/wp-content/uploads/2023/10/221279cf-7747-4591-ba76-9d3874539aee-819x1024.jpeg" alt="Eliminatórias">
+      <p class="source">Fontes: <a href="https://pt.uefa.com/european-qualifiers/" target="_blank">UEFA</a>, <a href="https://www.conmebol.com/" target="_blank">CONMEBOL</a>, <a href="https://www.cafonline.com/" target="_blank">CAF</a></p>
+
+      <h2>🏆 Outras Competições</h2>
+      <ul>
+        <li><strong>Supercopa da UEFA:</strong> <span class="highlight">14 de agosto de 2025</span> — Campeão da Champions vs. Liga Europa</li>
+        <li><strong>Copa Africana de Nações:</strong> <span class="highlight">janeiro de 2026</span> — na Costa do Marfim</li>
+        <li><strong>Copa América:</strong> <span class="highlight">junho de 2026</span> — nos EUA</li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>

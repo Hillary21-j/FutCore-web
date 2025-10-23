@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria — FutCore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      background-color: #f4f4f4;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #111;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      color: #00ffcc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
+      border-bottom: 1px solid #444;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+    }
+
+    .sidebar a:hover {
+      background-color: #00ffcc;
+      color: #111;
+    }
+
+    .main {
+      margin-left: 220px;
+      flex-grow: 1;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 40px;
+      color: #333;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    .source {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    a {
+      color: #00ccaa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu vertical -->
+  <div class="sidebar">
+    <h2>FutCore</h2>
+    <a href="index.html">Início</a>
+    <a href="times.html">Times</a>
+    <a href="jogadores.html">Jogadores</a>
+    <a href="calendario.html">Calendário</a>
+    <a href="historia.html">História</a>
+    <a href="galeria.html">Galeria</a>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="main">
+    <!-- Menu horizontal -->
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="classificacoes.html">Classificações</a>
+      <a href="competicoes.html">Competições</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <section>
+      <h1>Galeria FutCore</h1>
+      <p>Explore os momentos mais épicos do futebol mundial: craques lendários, clubes históricos, estádios icônicos e conquistas inesquecíveis.</p>
+
+      <h2>🌟 Craques Históricos</h2>
+      <div class="gallery">
+        <img src="https://i.pinimg.com/originals/8c/fb/73/8cfb73dd73c57eaa53cfdc965d02a142.jpg" alt="Pelé e Maradona">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Johan_Cruyff_1974c.jpg" alt="Johan Cruyff">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Franz_Beckenbauer_1974.jpg" alt="Beckenbauer">
+      </div>
+
+      <h2>🔥 Estrelas Atuais</h2>
+      <div class="gallery">
+        <img src="https://segredosdomundo.r7.com/wp-content/uploads/2021/12/melhores-jogadores-de-futebol-do-mundo-saiba-quais-sao-e-onde-jogam-960x640.jpg" alt="Mbappé e Haaland">
+        <img src="https://pbs.twimg.com/media/FzvZz0gXwAAYZgV.jpg" alt="Vinícius Jr e Rodrygo">
+        <img src="https://pbs.twimg.com/media/FzvZz0gWwAAZgVZ.jpg" alt="Bellingham e Lamine Yamal">
+      </div>
+
+      <h2>🏟️ Estádios Icônicos</h2>
+      <div class="gallery">
+        <img src="https://cdn.pixabay.com/photo/2016/11/18/15/07/football-1835320_1280.jpg" alt="Camp Nou">
+        <img src="https://cdn.pixabay.com/photo/2017/08/07/01/53/soccer-2599747_1280.jpg" alt="Santiago Bernabéu">
+        <img src="https://cdn.pixabay.com/photo/2018/05/08/21/28/soccer-3385044_1280.jpg" alt="Allianz Arena">
+      </div>
+
+      <h2>🏆 Conquistas Memoráveis</h2>
+      <div class="gallery">
+        <img src="https://imagens.ebc.com.br/r2DcyNRqi4D24mO-be0-LKsQBn4=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/flamengo_tri_libertadores.jpg" alt="Flamengo campeão">
+        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltc92de08f6cf2747b/62d03e5cc0085045b063b65f/fla_gabi_arrasca_pedro2.jpg" alt="Jogadores do Flamengo">
+        <img src="https://esportesmais.com.br/wp-content/uploads/2022/11/Sem-titulo-2.jpg" alt="Barcelona recorde">
+      </div>
+
+      <p class="source">Fontes: FIFA, UEFA, Goal.com, Agência Brasil, Wikipedia, EsportesMais</p>
+    </section>
+  </div>
+
+</body>
+</html>

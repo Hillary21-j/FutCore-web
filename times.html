@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Times — FutCore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      background-color: #f4f4f4;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #111;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      color: #00ffcc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
+      border-bottom: 1px solid #444;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+    }
+
+    .sidebar a:hover {
+      background-color: #00ffcc;
+      color: #111;
+    }
+
+    .main {
+      margin-left: 220px;
+      flex-grow: 1;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 40px;
+      color: #333;
+    }
+
+    ul {
+      font-size: 18px;
+      line-height: 1.6;
+      padding-left: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .source {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    a {
+      color: #00ccaa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu vertical -->
+  <div class="sidebar">
+    <h2>FutCore</h2>
+    <a href="index.html">Início</a>
+    <a href="times.html">Times</a>
+    <a href="jogadores.html">Jogadores</a>
+    <a href="calendario.html">Calendário</a>
+    <a href="historia.html">História</a>
+    <a href="galeria.html">Galeria</a>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="main">
+    <!-- Menu horizontal -->
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="classificacoes.html">Classificações</a>
+      <a href="competicoes.html">Competições</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <section>
+      <h1>Times das Ligas Europeias</h1>
+
+      <h2>🇪🇸 LaLiga</h2>
+      <ul>
+        <li>Barcelona</li>
+        <li>Real Madrid</li>
+        <li>Atlético de Madrid</li>
+        <li>Sevilla</li>
+        <li>Real Sociedad</li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2016/11/18/15/07/football-1835320_1280.jpg" alt="LaLiga">
+      <p class="source">Fonte: <a href="https://www.laliga.com" target="_blank">LaLiga.com</a></p>
+
+      <h2>🏴 Premier League</h2>
+      <ul>
+        <li>Manchester City</li>
+        <li>Arsenal</li>
+        <li>Liverpool</li>
+        <li>Chelsea</li>
+        <li>Manchester United</li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2017/08/07/01/53/soccer-2599747_1280.jpg" alt="Premier League">
+      <p class="source">Fonte: <a href="https://www.premierleague.com" target="_blank">PremierLeague.com</a></p>
+
+      <h2>🇮🇹 Serie A</h2>
+      <ul>
+        <li>Inter de Milão</li>
+        <li>AC Milan</li>
+        <li>Juventus</li>
+        <li>Napoli</li>
+        <li>Roma</li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/football-1868971_1280.jpg" alt="Serie A">
+      <p class="source">Fonte: <a href="https://www.legaseriea.it" target="_blank">SerieA Oficial</a></p>
+
+      <h2>🇩🇪 Bundesliga</h2>
+      <ul>
+        <li>Bayern de Munique</li>
+        <li>Borussia Dortmund</li>
+        <li>RB Leipzig</li>
+        <li>Bayer Leverkusen</li>
+        <li>Eintracht Frankfurt</li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2018/05/08/21/28/soccer-3385044_1280.jpg" alt="Bundesliga">
+      <p class="source">Fonte: <a href="https://www.bundesliga.com" target="_blank">Bundesliga.com</a></p>
+
+      <h2>🇫🇷 Ligue 1</h2>
+      <ul>
+        <li>Paris Saint-Germain</li>
+        <li>AS Monaco</li>
+        <li>Olympique de Marseille</li>
+        <li>Lyon</li>
+        <li>Lille</li>
+      </ul>
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/football-1868971_1280.jpg" alt="Ligue 1">
+      <p class="source">Fonte: <a href="https://www.ligue1.com" target="_blank">Ligue1.com</a></p>
+
+    </section>
+  </div>
+
+</body>
+</html>

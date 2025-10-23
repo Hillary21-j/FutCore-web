@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>FutCore — Paixão pelo Futebol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      background-color: #f0f0f0;
+    }
+
+    /* Menu vertical */
+    .sidebar {
+      width: 220px;
+      background-color: #111;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      color: #00ffcc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
+      border-bottom: 1px solid #444;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+    }
+
+    .sidebar a:hover {
+      background-color: #00ffcc;
+      color: #111;
+    }
+
+    /* Conteúdo principal */
+    .main {
+      margin-left: 220px;
+      flex-grow: 1;
+    }
+
+    /* Menu horizontal */
+    nav {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    /* Cabeçalho com imagem */
+    header {
+      background-image: url('https://i.pinimg.com/originals/ae/0d/5a/ae0d5a12878585c2460af77fd649930b.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    header h1 {
+      font-size: 60px;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Seção de boas-vindas */
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    section p {
+      font-size: 18px;
+      color: #555;
+      max-width: 800px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu vertical -->
+  <div class="sidebar">
+    <h2>FutCore</h2>
+    <a href="index.html">Início</a>
+    <a href="times.html">Times</a>
+    <a href="jogadores.html">Jogadores</a>
+    <a href="calendario.html">Calendário</a>
+    <a href="historia.html">História</a>
+    <a href="galeria.html">Galeria</a>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="main">
+    <!-- Menu horizontal -->
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="classificacoes.html">Classificações</a>
+      <a href="competicoes.html">Competições</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <!-- Cabeçalho com imagem -->
+    <header>
+      <h1>FutCore — Onde o Futebol Vive</h1>
+    </header>
+
+    <!-- Seção de boas-vindas -->
+    <section>
+      <h2>Bem-vindo ao FutCore</h2>
+      <p>O seu portal completo sobre futebol mundial. Aqui você encontra notícias atualizadas, classificação das ligas, calendário da Champions, história das lendas, galeria de imagens e muito mais. Explore cada menu e mergulhe na paixão que une o mundo inteiro: o futebol.</p>
+    </section>
+  </div>
+
+</body>
+</html>

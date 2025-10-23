@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogadores — FutCore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      background-color: #f4f4f4;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #111;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      color: #00ffcc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 24px;
+      border-bottom: 1px solid #444;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+    }
+
+    .sidebar a:hover {
+      background-color: #00ffcc;
+      color: #111;
+    }
+
+    .main {
+      margin-left: 220px;
+      flex-grow: 1;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 40px;
+      color: #333;
+    }
+
+    ul {
+      font-size: 18px;
+      line-height: 1.6;
+      padding-left: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .source {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    a {
+      color: #00ccaa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu vertical -->
+  <div class="sidebar">
+    <h2>FutCore</h2>
+    <a href="index.html">Início</a>
+    <a href="times.html">Times</a>
+    <a href="jogadores.html">Jogadores</a>
+    <a href="calendario.html">Calendário</a>
+    <a href="historia.html">História</a>
+    <a href="galeria.html">Galeria</a>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div class="main">
+    <!-- Menu horizontal -->
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="classificacoes.html">Classificações</a>
+      <a href="competicoes.html">Competições</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <section>
+      <h1>Craques Históricos e Estrelas Atuais</h1>
+      <p>Conheça os jogadores que marcaram época e os que dominam o futebol mundial em 2025. De Pelé a Mbappé, o talento atravessa gerações e fronteiras.</p>
+
+      <h2>🌟 Lendas Eternas</h2>
+      <ul>
+        <li><strong>Pelé (Brasil):</strong> Tricampeão mundial, 1281 gols, ícone eterno do futebol.</li>
+        <li><strong>Diego Maradona (Argentina):</strong> Campeão da Copa de 1986, gênio rebelde e mágico.</li>
+        <li><strong>Johan Cruyff (Holanda):</strong> Criador do “futebol total”, revolucionário tático.</li>
+        <li><strong>Franz Beckenbauer (Alemanha):</strong> Campeão como jogador e técnico, o “Kaiser”.</li>
+        <li><strong>Zinedine Zidane (França):</strong> Campeão mundial e técnico vitorioso do Real Madrid.</li>
+        <li><strong>Ronaldo Fenômeno (Brasil):</strong> Artilheiro nato, bicampeão mundial.</li>
+      </ul>
+      <img src="https://i.pinimg.com/originals/8c/fb/73/8cfb73dd73c57eaa53cfdc965d02a142.jpg" alt="Pelé e Maradona">
+
+      <h2>🔥 Melhores Jogadores Atuais (2025)</h2>
+      <ul>
+        <li><strong>Kylian Mbappé (França):</strong> Artilheiro do PSG e da seleção francesa. Favorito à Bola de Ouro 2025.</li>
+        <li><strong>Erling Haaland (Noruega):</strong> Goleador do Manchester City, destaque na Premier League.</li>
+        <li><strong>Jude Bellingham (Inglaterra):</strong> Meio-campista do Real Madrid, destaque da nova geração.</li>
+        <li><strong>Vinícius Jr (Brasil):</strong> Craque do Real Madrid, decisivo na Champions League.</li>
+        <li><strong>Lamine Yamal (Espanha):</strong> Jovem promessa do Barcelona, já titular na seleção.</li>
+        <li><strong>Rodrygo (Brasil):</strong> Versátil e decisivo, destaque em jogos grandes.</li>
+      </ul>
+      <img src="https://segredosdomundo.r7.com/wp-content/uploads/2021/12/melhores-jogadores-de-futebol-do-mundo-saiba-quais-sao-e-onde-jogam-960x640.jpg" alt="Mbappé e Haaland">
+
+      <h2>📈 Estatísticas e Conquistas</h2>
+      <ul>
+        <li>Mbappé: 42 gols em 2024/25, 8 assistências</li>
+        <li>Haaland: 39 gols, 5 assistências</li>
+        <li>Bellingham: 15 gols, 12 assistências</li>
+        <li>Vinícius Jr: 18 gols, 14 assistências</li>
+      </ul>
+
+      <p class="source">Fontes: <a href="https://www.flashscore.pt" target="_blank">Flashscore.pt</a>, <a href="https://www.transfermarkt.com" target="_blank">Transfermarkt</a></p>
+    </section>
+  </div>
+
+</body>
+</html>
